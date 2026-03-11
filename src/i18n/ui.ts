@@ -73,10 +73,10 @@ export const experienceData = {
       period: "Jan 2026 — Present",
       shortDescription: "Leading engineering efforts in a software house, modernizing technical architecture.",
       responsibilities: [
-        "Increased software delivery efficiency by 100% through the design of standardized architectural templates.",
-        "Managed end-to-end SDLC, designing scalable backends with Java Spring Boot and dynamic interfaces with Next.js & TanStack Start.",
-        "Architected secure server infrastructure on DigitalOcean VPS and optimized deploy pipelines for high availability.",
-        "Mentored the development team on code quality best practices and system architecture streamlining."
+        "I increased software delivery efficiency by 100% through the design of standardized architectural templates.",
+        "I managed the end-to-end SDLC, designing scalable backends with Java Spring Boot and dynamic interfaces with Next.js & TanStack Start.",
+        "I architected secure server infrastructure on DigitalOcean VPS and optimized deploy pipelines for high availability.",
+        "I mentored the development team on code quality best practices and system architecture streamlining."
       ]
     },
     {
@@ -85,10 +85,10 @@ export const experienceData = {
       period: "May 2024 — Jan 2026",
       shortDescription: "SaaS/CRM product engineer focused on data engineering and B2B backend infrastructure.",
       responsibilities: [
-        "Built and maintained REST APIs for lead routing and enrichment across 200+ clients.",
-        "Integrated complex third-party tools including WhatsApp Business API and OpenAI.",
-        "Optimized PostgreSQL and Redis performance for 1,000+ active instances and large data volumes.",
-        "Managed cloud infrastructure and CI/CD pipelines using Git and Docker containers."
+        "I built and maintained REST APIs for lead routing and enrichment across 200+ clients.",
+        "I integrated complex third-party tools including WhatsApp Business API and OpenAI.",
+        "I optimized PostgreSQL and Redis performance for 1,000+ active instances and large data volumes.",
+        "I managed cloud infrastructure and CI/CD pipelines using Git and Docker containers."
       ]
     },
     {
@@ -97,9 +97,9 @@ export const experienceData = {
       period: "Feb 2024 — Jul 2024",
       shortDescription: "Developing energy management platforms with a focus on load performance.",
       responsibilities: [
-        "Led Full-Stack development of a solar energy platform using Next.js and TypeScript.",
-        "Reduced dashboard load times by 40% through effective caching and query optimization strategies.",
-        "Implemented secure client management features and telemetry data visualization for 500+ active users."
+        "I led Full-Stack development of a solar energy platform using Next.js and TypeScript.",
+        "I reduced dashboard load times by 40% through effective caching and query optimization strategies.",
+        "I implemented secure client management features and telemetry data visualization for 500+ active users."
       ]
     }
   ],
@@ -110,10 +110,10 @@ export const experienceData = {
       period: "Janeiro 2026 — Presente",
       shortDescription: "Liderando esforços de engenharia em software house, modernizando a arquitetura técnica.",
       responsibilities: [
-        "Aumentou a eficiência na entrega em 100% através da concepção de templates arquiteturais padronizados.",
-        "Gerenciou o ciclo de vida completo (SDLC), projetando backends com Java Spring Boot e interfaces com Next.js & TanStack Start.",
+        "Aumentei a eficiência na entrega em 100% através da concepção de templates arquiteturais padronizados.",
+        "Gerenciei o ciclo de vida completo (SDLC), projetando backends com Java Spring Boot e interfaces com Next.js & TanStack Start.",
         "Arquitetou infraestrutura segura em VPS da DigitalOcean e otimizou pipelines de deploy para alta disponibilidade.",
-        "Mentoria técnica da equipe em qualidade de código, arquitetura de sistemas e simplificação de fluxos."
+        "Realizei mentoria técnica da equipe em qualidade de código, arquitetura de sistemas e simplificação de fluxos."
       ]
     },
     {
@@ -122,10 +122,10 @@ export const experienceData = {
       period: "Maio 2024 — Janeiro 2026",
       shortDescription: "Engenheiro de produto SaaS/CRM com foco em engenharia de dados e infraestrutura B2B.",
       responsibilities: [
-        "Construção e manutenção de APIs REST para roteamento e enriquecimento de leads para 200+ clientes.",
-        "Integrações complexas com ferramentas de terceiros (WhatsApp Business API e OpenAI).",
-        "Otimizou performance de PostgreSQL e Redis para mais de 1.000 instâncias ativas e grandes volumes de dados.",
-        "Gestão de infraestrutura cloud e pipelines de CI/CD utilizando Git e Docker."
+        "Construí e mantive APIs REST para roteamento e enriquecimento de leads para 200+ clientes.",
+        "Fui responsável por integrações complexas com ferramentas de terceiros (WhatsApp Business API e OpenAI).",
+        "Otimizei performance de PostgreSQL e Redis para mais de 1.000 instâncias ativas e grandes volumes de dados.",
+        "Gerenciei infraestrutura cloud e pipelines de CI/CD utilizando Git e Docker."
       ]
     },
     {
@@ -134,9 +134,9 @@ export const experienceData = {
       period: "Fevereiro 2024 — Julho 2024",
       shortDescription: "Desenvolvimento de plataforma de gestão de energia com foco em performance de carregamento.",
       responsibilities: [
-        "Liderou o desenvolvimento Full-Stack de plataforma de energia solar usando Next.js e TypeScript.",
-        "Reduziu o tempo de carregamento em 40% através de estratégias de cache e otimização de queries.",
-        "Implementou recursos de gestão de clientes e visualização de dados de telemetria para 500+ usuários ativos."
+        "Liderei o desenvolvimento Full-Stack de plataforma de energia solar usando Next.js e TypeScript.",
+        "Reduzi o tempo de carregamento em 40% através de estratégias de cache e otimização de queries.",
+        "Implementei recursos de gestão de clientes e visualização de dados de telemetria para 500+ usuários ativos."
       ]
     }
   ]

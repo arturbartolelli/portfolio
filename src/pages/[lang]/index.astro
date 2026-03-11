@@ -20,11 +20,11 @@ const currentExperience = experienceData[lang as keyof typeof experienceData];
 		class="min-h-[90vh] flex flex-col justify-center px-6 max-w-7xl mx-auto relative overflow-hidden"
 	>
 		<div
-			class="absolute -top-24 -right-24 w-96 h-96 bg-amazon-green-pastel/5 blur-[120px] rounded-full"
+			class="absolute -top-24 -right-24 w-64 h-64 md:w-96 md:h-96 bg-amazon-green-pastel/5 blur-[120px] rounded-full"
 		>
 		</div>
 		<div
-			class="absolute top-1/2 -left-24 w-64 h-64 bg-amazon-green-deep/10 blur-[100px] rounded-full"
+			class="absolute top-1/2 -left-24 w-48 h-48 md:w-64 md:h-64 bg-amazon-green-deep/10 blur-[100px] rounded-full"
 		>
 		</div>
 
@@ -34,7 +34,7 @@ const currentExperience = experienceData[lang as keyof typeof experienceData];
 				>Full-Stack Engineer</span
 			>
 			<h1
-				class="font-display text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8 opacity-reveal"
+				class="font-display text-4xl sm:text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8 opacity-reveal"
 			>
 				{t("hero.headline")}
 			</h1>
@@ -61,7 +61,7 @@ const currentExperience = experienceData[lang as keyof typeof experienceData];
 		</div>
 
 		<div
-			class="absolute bottom-10 left-6 flex items-center gap-4 font-mono text-[10px] text-amazon-beige/40 uppercase tracking-widest group"
+			class="absolute bottom-10 left-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 font-mono text-[10px] text-amazon-beige/40 uppercase tracking-widest group"
 		>
 			<span class="opacity-70">
 				{lang === "pt" ? "Pressione " : "Press "}
@@ -71,8 +71,8 @@ const currentExperience = experienceData[lang as keyof typeof experienceData];
 				>
 				{
 					lang === "pt"
-						? " ou clique para abrir o terminal"
-						: " or click to open terminal"
+						? " ou clique para abrir"
+						: " or click to open"
 				}
 			</span>
 			<button
@@ -113,7 +113,7 @@ const currentExperience = experienceData[lang as keyof typeof experienceData];
 						class="p-8 h-full flex flex-col justify-end relative z-10"
 					>
 						<span
-							class="text-stroke text-7xl font-display font-bold block mb-4 tracking-tighter uppercase"
+							class="text-stroke text-5xl md:text-7xl font-display font-bold block mb-4 tracking-tighter uppercase"
 							>{t("about.engineer_title")}</span
 						>
 						<p
