@@ -6,7 +6,7 @@ const { lang } = Astro.props;
   <div class="bg-amazon-forest border border-amazon-green-deep w-full max-w-2xl rounded-lg shadow-2xl overflow-hidden font-mono text-sm">
     <div class="bg-amazon-green-deep/30 px-4 py-2 flex items-center justify-between border-b border-amazon-green-deep">
       <div class="flex gap-2">
-        <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+        <div id="terminal-close" class="w-3 h-3 rounded-full bg-red-500/50 cursor-pointer hover:bg-red-500 transition-colors"></div>
         <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
         <div class="w-3 h-3 rounded-full bg-amazon-green-pastel/50"></div>
       </div>
@@ -28,6 +28,7 @@ const { lang } = Astro.props;
   import { gsap } from 'gsap';
 
   const overlay = document.getElementById('terminal-overlay');
+  const closeBtn = document.getElementById('terminal-close');
   const input = document.getElementById('terminal-input') as HTMLInputElement;
   const content = document.getElementById('terminal-content');
 
@@ -54,6 +55,14 @@ const { lang } = Astro.props;
       gsap.to(overlay, { opacity: 0, scale: 0.9, duration: 0.2, onComplete: () => overlay?.classList.add('hidden') });
     }
   }
+
+  overlay?.addEventListener('click', (e) => {
+    if (e.target === overlay) toggleTerminal();
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    toggleTerminal();
+  });
 
   window.addEventListener('toggle-terminal', () => {
     toggleTerminal();
