@@ -112,7 +112,7 @@ export const experienceData = {
       responsibilities: [
         "Aumentei a eficiência na entrega em 100% através da concepção de templates arquiteturais padronizados.",
         "Gerenciei o ciclo de vida completo (SDLC), projetando backends com Java Spring Boot e interfaces com Next.js & TanStack Start.",
-        "Arquitetou infraestrutura segura em VPS da DigitalOcean e otimizou pipelines de deploy para alta disponibilidade.",
+        "Arquitetuei infraestrutura segura em VPS da DigitalOcean e otimizei pipelines de deploy para alta disponibilidade.",
         "Realizei mentoria técnica da equipe em qualidade de código, arquitetura de sistemas e simplificação de fluxos."
       ]
     },
