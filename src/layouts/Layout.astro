@@ -1,0 +1,109 @@
+---
+import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import Terminal from '../components/Terminal.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Artur Bartolelli - Full-Stack Developer Portfolio" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+		<title>{title} | Artur</title>
+		<ClientRouter />
+	</head>
+	<body class="bg-amazon-black text-amazon-sand selection:bg-amazon-green-pastel selection:text-amazon-black font-sans antialiased overflow-x-hidden">
+		
+		<header class="fixed top-0 left-0 w-full z-50 bg-amazon-black/50 backdrop-blur-md border-b border-amazon-green-deep/30">
+			<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+				<a href={`/${lang}`} class="font-display font-bold text-2xl tracking-tighter text-amazon-green-pastel">
+					ARTUR<span class="text-amazon-beige">.</span>
+				</a>
+				
+				<div class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-amazon-beige/60">
+					<a href="#about" class="hover:text-amazon-green-pastel transition-colors">/ {t('nav.about')}</a>
+					<a href="#experience" class="hover:text-amazon-green-pastel transition-colors">/ {t('nav.projects')}</a>
+					<a href="#contact" class="hover:text-amazon-green-pastel transition-colors">/ {t('nav.contact')}</a>
+				</div>
+
+				<div class="flex items-center gap-4">
+					<div class="flex bg-amazon-forest border border-amazon-green-deep rounded-full p-1">
+						<a href="/pt/" class={`px-3 py-1 rounded-full text-[10px] font-mono transition-colors ${lang === 'pt' ? 'bg-amazon-green-pastel text-amazon-black' : 'text-amazon-beige/40 hover:text-amazon-beige'}`}>PT</a>
+						<a href="/en/" class={`px-3 py-1 rounded-full text-[10px] font-mono transition-colors ${lang === 'en' ? 'bg-amazon-green-pastel text-amazon-black' : 'text-amazon-beige/40 hover:text-amazon-beige'}`}>EN</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="pt-20">
+			<slot />
+		</main>
+
+		<footer id="contact" class="py-20 border-t border-amazon-green-deep/20 bg-amazon-forest/30">
+			<div class="max-w-7xl mx-auto px-6 text-center">
+				<h2 class="font-display text-4xl md:text-6xl font-bold mb-12 text-amazon-sand opacity-reveal">Let's <span class="text-amazon-green-pastel">Connect</span>.</h2>
+				<div class="flex flex-wrap justify-center gap-8 mb-16 opacity-reveal">
+					<a href="mailto:arturbartonelli@gmail.com" class="font-mono hover:text-amazon-green-pastel transition-all underline decoration-amazon-green-deep underline-offset-8">arturbartonelli@gmail.com</a>
+					<a href="https://www.linkedin.com/in/artur-bartolelli/" class="font-mono hover:text-amazon-green-pastel transition-all underline decoration-amazon-green-deep underline-offset-8">LinkedIn</a>
+					<a href="https://github.com/arturbartolelli" class="font-mono hover:text-amazon-green-pastel transition-all underline decoration-amazon-green-deep underline-offset-8">GitHub</a>
+				</div>
+				<div class="text-amazon-beige/30 font-mono text-xs max-w-lg mx-auto leading-relaxed opacity-reveal">
+					{t('footer.reference')} Pedro Ivo, Matheus Mafra.
+					<p class="mt-8">&copy; 2026 Artur. Built with Astro & Bun.</p>
+				</div>
+			</div>
+		</footer>
+
+		<Terminal lang={lang} />
+
+		<script>
+			import { gsap } from 'gsap';
+			import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+			gsap.registerPlugin(ScrollTrigger);
+
+			const setupAnimations = () => {
+				// Kill existing triggers to avoid leaks and double-animations
+				ScrollTrigger.getAll().forEach(t => t.kill());
+				
+				const reveals = document.querySelectorAll('.opacity-reveal');
+				reveals.forEach((el) => {
+					// Set initial state to avoid flash of content
+					gsap.set(el, { y: 30, opacity: 0 });
+					
+					gsap.to(el, {
+						y: 0,
+						opacity: 1,
+						duration: 1,
+						ease: 'power3.out',
+						scrollTrigger: {
+							trigger: el,
+							start: 'top 88%',
+							toggleActions: 'play none none none'
+						}
+					});
+				});
+
+				ScrollTrigger.refresh();
+			};
+
+			document.addEventListener('astro:page-load', setupAnimations);
+			setupAnimations();
+		</script>
+	</body>
+</html>

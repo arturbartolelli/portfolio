@@ -1,43 +1,45 @@
-# Astro Starter Kit: Minimal
+# Artur Bartolelli | Full-Stack Engineer
 
-```sh
-bun create astro@latest -- --template minimal
-```
+## 👨‍💻 About Me
+I am a **Full-Stack Engineer** focused on building **scalable SaaS platforms** and **high-performance architectures**. Currently at **ABM TI**, I lead technical efforts across robust backends (**Golang**, Java Spring Boot) and dynamic, high-fidelity frontends (, Next.js, TanStack Start).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Expertise includes:
+- **Architecting CRMs** and distributed systems.
+- **Microservices & Cloud-Native** infrastructure (GCP, DigitalOcean).
+- **Automation & Integrations** (WhatsApp Business API via **Go**, OpenAI).
+- **Performance Optimization** and observability.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 About This Project: Professional Portfolio
+This is my modern, high-performance portfolio website built with efficiency and developer experience in mind.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### 🛠 Tech Stack
+- **Framework**: [Astro 6.0](https://astro.build/) - Selected for its stellar performance and islands architecture.
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - For a bespoke, grid-optimized layout.
+- **Runtime**: [Bun](https://bun.sh/) - Ensuring lightning-fast builds and package management.
+- **Animations**: [GSAP](https://gsap.com/) & [ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/) - For polished, non-blocking reveal effects.
+- **i18n**: Custom internationalization system supporting **English (C2)** and **Portuguese**.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### ✨ Highlights
+- **Interactive Experience Accordion**: A custom-built, highly polished accordion component using `grid-template-rows` for smooth height transitions.
+- **Developer Console**: An interactive, hidden terminal (`Ctrl + K`) that reflects my professional history and skills.
+- **Cloud-Native Design**: Optimized for deployments on VPS environments and modern cloud providers.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `bun install`     | Installs dependencies                        |
+| `bun dev`         | Starts local dev server at `localhost:4321`  |
+| `bun build`       | Build the production site to `./dist/`      |
+| `bun preview`     | Preview your build locally                   |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📬 Contact
+- **Email**: [arturbartonelli@gmail.com](mailto:arturbartonelli@gmail.com)
+- **LinkedIn**: [artur-bartolelli](https://www.linkedin.com/in/artur-bartolelli/)
+- **GitHub**: [@arturbartolelli](https://github.com/arturbartolelli)
